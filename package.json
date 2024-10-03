@@ -3,17 +3,21 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev:frontend": "astro dev",
+    "dev:backend": "nodemon server.js",
+    "start:frontend": "astro dev",
+    "start:backend": "nodemon server.js",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/react": "^3.6.2",
+    "@google/generative-ai": "^0.21.0",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.15.10",
+    "nodemon": "^3.1.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
